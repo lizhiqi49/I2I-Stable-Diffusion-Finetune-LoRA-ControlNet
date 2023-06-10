@@ -1,0 +1,31 @@
+exp_name: lora_chinesepainting
+mode: lora
+num_images_to_train: 20
+pretrained_model_path: runwayml/stable-diffusion-v1-5
+lora_rank: 4
+output_dir: ./output
+seed: 0
+learning_rate: 1.0e-05
+train_batch_size: 4
+max_train_steps: 5000
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 0.001
+adam_epsilon: 1.0e-08
+max_grad_norm: 1.0
+lr_scheduler: constant
+lr_warmup_steps: 0
+mixed_precision: fp16
+scale_lr: false
+gradient_accumulation_steps: 1
+gradient_checkpointing: false
+checkpointing_step_interv: 500
+validation_step_interv: 100
+resume_from_checkpoint: null
+enable_xformers_memory_efficient_attention: true
+num_inference_steps: 20
+num_validation_images: 8
+validation_prompt: a painting
+guidance_scale: 9.0
+negative_prompt: longbody, lowres, bad anatomy, bad hands, missing fingers, extra
+  digit, fewer digits, cropped, worst quality, low quality
