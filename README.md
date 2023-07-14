@@ -1,6 +1,6 @@
 # Stable Diffusion fine-tuning with LoRA plus ControlNet attachment for image transfer
 
-This is a project of course "Deep Learning" of Westlake University, and this repository seeks to perform few-shot image transfer by fine-tuning Stable Diffusion on a small dataset contains several images of target domain, and then sampling attached with ControlNet.
+This repository seeks to perform few-shot image transfer by fine-tuning Stable Diffusion on a small dataset contains several images of target domain, and then sampling attached with ControlNet.
 
 
 ## Quickstart
